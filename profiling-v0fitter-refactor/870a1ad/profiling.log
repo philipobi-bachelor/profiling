@@ -1,0 +1,226 @@
+[INFO] Steering file: v0profile.py
+Profiling requested, restarting using callgrind
+==1099188== Callgrind, a call-graph generating cache profiler
+==1099188== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==1099188== Using Valgrind-3.17.0 and LibVEX; rerun with -h for copyright info
+==1099188== Command: basf2 --profile V0Finder v0profile.py
+==1099188== 
+==1099188== For interactive control, run 'callgrind_control -h'.
+--1099188-- WARNING: unhandled amd64-linux syscall: 334
+--1099188-- You may be able to write your own handler.
+--1099188-- Read the file README_MISSING_SYSCALL_OR_IOCTL.
+--1099188-- Nevertheless we consider this a bug.  Please report
+--1099188-- it at http://valgrind.org/support/bug_reports.html.
+--1099188-- WARNING: unhandled amd64-linux syscall: 435
+--1099188-- You may be able to write your own handler.
+--1099188-- Read the file README_MISSING_SYSCALL_OR_IOCTL.
+--1099188-- Nevertheless we consider this a bug.  Please report
+--1099188-- it at http://valgrind.org/support/bug_reports.html.
+--1099188-- WARNING: unhandled amd64-linux syscall: 435
+--1099188-- You may be able to write your own handler.
+--1099188-- Read the file README_MISSING_SYSCALL_OR_IOCTL.
+--1099188-- Nevertheless we consider this a bug.  Please report
+--1099188-- it at http://valgrind.org/support/bug_reports.html.
+--1099188-- WARNING: unhandled amd64-linux syscall: 435
+--1099188-- You may be able to write your own handler.
+--1099188-- Read the file README_MISSING_SYSCALL_OR_IOCTL.
+--1099188-- Nevertheless we consider this a bug.  Please report
+--1099188-- it at http://valgrind.org/support/bug_reports.html.
+--1099188-- WARNING: unhandled amd64-linux syscall: 435
+--1099188-- You may be able to write your own handler.
+--1099188-- Read the file README_MISSING_SYSCALL_OR_IOCTL.
+--1099188-- Nevertheless we consider this a bug.  Please report
+--1099188-- it at http://valgrind.org/support/bug_reports.html.
+--1099188-- WARNING: unhandled amd64-linux syscall: 435
+--1099188-- You may be able to write your own handler.
+--1099188-- Read the file README_MISSING_SYSCALL_OR_IOCTL.
+--1099188-- Nevertheless we consider this a bug.  Please report
+--1099188-- it at http://valgrind.org/support/bug_reports.html.
+--1099188-- WARNING: unhandled amd64-linux syscall: 435
+--1099188-- You may be able to write your own handler.
+--1099188-- Read the file README_MISSING_SYSCALL_OR_IOCTL.
+--1099188-- Nevertheless we consider this a bug.  Please report
+--1099188-- it at http://valgrind.org/support/bug_reports.html.
+==1099188== brk segment overflow in thread #1: can't grow to 0x4851000
+==1099188== (see section Limitations in user manual)
+==1099188== NOTE: further instances of this message will not be shown
+--1099188-- WARNING: unhandled amd64-linux syscall: 435
+--1099188-- You may be able to write your own handler.
+--1099188-- Read the file README_MISSING_SYSCALL_OR_IOCTL.
+--1099188-- Nevertheless we consider this a bug.  Please report
+--1099188-- it at http://valgrind.org/support/bug_reports.html.
+[INFO] Steering file: v0profile.py
+--1099188-- WARNING: unhandled amd64-linux syscall: 435
+--1099188-- You may be able to write your own handler.
+--1099188-- Read the file README_MISSING_SYSCALL_OR_IOCTL.
+--1099188-- Nevertheless we consider this a bug.  Please report
+--1099188-- it at http://valgrind.org/support/bug_reports.html.
+[INFO] The random number seed is set to "1337"
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+[INFO] Starting event processing, random seed is set to '1337'
+[INFO] Added file /project/agkuhr/users/pobi/b2/KShortGenSimNoBkg.root
+--1099188-- WARNING: unhandled amd64-linux syscall: 435
+--1099188-- You may be able to write your own handler.
+--1099188-- Read the file README_MISSING_SYSCALL_OR_IOCTL.
+--1099188-- Nevertheless we consider this a bug.  Please report
+--1099188-- it at http://valgrind.org/support/bug_reports.html.
+[INFO] Conditions Database: found working metadata provider
+	provider = http://belle2db.sdcc.bnl.gov/b2s/rest/
+[INFO] Conditions data: configured globaltag is release-09-00-00
+
+**************************************************************
+ Geant4 version Name: geant4-11-02-patch-01    (16-February-2024)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+[INFO] SVD  6-sample DAQ, cluster time algorithm: CoG3, cluster charge algorithm: MaxSample, cluster position algorithm: CoGOnly
+[INFO]  with strip charge reconstructed with MaxSample and strip time reconstructed with dontdo
+[INFO] SVD  3-sample DAQ, cluster time algorithm: CoG3, cluster charge algorithm: MaxSample, cluster position algorithm: CoGOnly
+[INFO]  with strip charge reconstructed with MaxSample and strip time reconstructed with dontdo
+[INFO] SVDTimeGrouping : SVDCluster groupId is assigned for 6-sample DAQ mode.
+[INFO] SVDTimeGrouping : SVDCluster groupId is not assigned for 3-sample DAQ mode.
+[INFO] SVDSpacePointCreator : SVDCluster groupId is used for 6-sample DAQ mode.
+[INFO] SVDSpacePointCreator : SVDCluster groupId is not used for 3-sample DAQ mode.
+[INFO] Begin of new run.
+[WARNING] Could not extrapolate the fit result for pdg 321 to the perigee point. Why, I don't know.  { module: TrackCreator_flipped }
+[INFO] Processed:   1 runs,      1/  1500 events.
+[WARNING] Could not extrapolate the fit result for pdg 2212 to the perigee point. Why, I don't know.  { module: TrackCreator_flipped }
+ ... message repeated 1 times
+[WARNING] Could not extrapolate the fit result for pdg 211 to the perigee point. Why, I don't know.  { module: TrackCreator_flipped }
+[WARNING] Could not extrapolate the fit result for pdg 2212 to the perigee point. Why, I don't know.  { module: TrackCreator_flipped }
+[INFO] Processed:   1 runs,      2/  1500 events.
+[INFO] Processed:   1 runs,      3/  1500 events.
+[INFO] Processed:   1 runs,      4/  1500 events.
+[WARNING] Could not extrapolate the fit result for pdg 2212 to the perigee point. Why, I don't know.  { module: TrackCreator_flipped }
+[INFO] Processed:   1 runs,      5/  1500 events.
+[INFO] Processed:   1 runs,      6/  1500 events.
+[INFO] Processed:   1 runs,      7/  1500 events.
+[WARNING] Could not extrapolate the fit result for pdg 2212 to the perigee point. Why, I don't know.  { module: TrackCreator_flipped }
+[INFO] Processed:   1 runs,      8/  1500 events.
+[INFO] Processed:   1 runs,      9/  1500 events.
+[WARNING] Could not extrapolate the fit result for pdg 321 to the perigee point. Why, I don't know.  { module: TrackCreator_flipped }
+ ... message repeated 1 times
+[WARNING] Could not extrapolate the fit result for pdg 2212 to the perigee point. Why, I don't know.  { module: TrackCreator_flipped }
+[INFO] Processed:   1 runs,     10/  1500 events.
+[WARNING] Could not extrapolate the fit result for pdg 321 to the perigee point. Why, I don't know.  { module: TrackCreator_flipped }
+[WARNING] Could not extrapolate the fit result for pdg 2212 to the perigee point. Why, I don't know.  { module: TrackCreator_flipped }
+ ... message repeated 3 times
+[INFO] Processed:   1 runs,     20/  1500 events.
+[WARNING] 250 tracks had not enough hits to have at least 5 number of degrees of freedom (NDF). No Track Candidates were created from them so they will not be passed to the track fitter  { module: TrackFinderMCTruthRecoTracks }
+[INFO] The MCTrackFinder created a total of 208 track candidates
+[INFO] ===KinkFinder summary===========================================================
+[INFO] In total 12 kinks saved. Among them
+[INFO] track pairs with close endpoints: 1;
+[INFO] track pairs with missing layers between their endpoints (Helix extrapolation selection): 2;
+[INFO] split track chosen from mother candidates: 2;
+[INFO] split track chosen from daughter candidates: 2;
+[INFO] split track chosen from tracks not passing mother/daughter preselection 5.
+[INFO] ===V0Finder summary=============================================================
+[INFO] In total 36 of 125 saved V0s have inner hits.
+[INFO] - Inner hits successfully removed in 19 V0s.
+[INFO] - The hit removal failed in 17 V0s, instead V0s before removing inner hits saved.
+[INFO] ===Error Summary================================================================
+[WARNING] Could not extrapolate the fit result for pdg 2212 to the perigee point. Why, I don't know.  { module: TrackCreator_flipped }
+    (last message occurred 10 times)
+[WARNING] Could not extrapolate the fit result for pdg 321 to the perigee point. Why, I don't know.  { module: TrackCreator_flipped }
+    (last message occurred 4 times)
+[WARNING] 250 tracks had not enough hits to have at least 5 number of degrees of freedom (NDF). No Track Candidates were created from them so they will not be passed to the track fitter  { module: TrackFinderMCTruthRecoTracks }
+[WARNING] Could not extrapolate the fit result for pdg 211 to the perigee point. Why, I don't know.  { module: TrackCreator_flipped }
+[INFO] ================================================================================
+[WARNING] in total, 16 warnings occurred during processing
+===============================================================================================
+Name                                |      Calls | Memory(MB) |    Time(s) |     Time(ms)/Call
+===============================================================================================
+RootInput                           |         21 |         14 |       2.51 |  119.57 +-  42.23
+Gearbox                             |         20 |          0 |       0.00 |    0.08 +-   0.03
+Geometry                            |         20 |          0 |       0.00 |    0.06 +-   0.00
+SetupGenfitExtrapolation            |         20 |          0 |       0.00 |    0.04 +-   0.00
+RegisterEventLevelTrackingInfo      |         20 |          0 |       0.01 |    0.40 +-   1.14
+SVDClusterizer                      |         20 |         10 |       5.84 |  291.80 +- 113.79
+SVDMissingAPVsClusterCreator        |         20 |          0 |       0.01 |    0.50 +-   0.02
+SVDTrackingEventLevelMdstInfoFiller |         20 |          0 |       0.03 |    1.52 +-   0.08
+SVDTimeGrouping                     |         20 |         49 |       4.81 |  240.38 +- 513.88
+SVDSpacePointCreator                |         20 |          1 |       0.57 |   28.48 +-   4.79
+PXDClusterizer                      |         20 |          2 |       1.04 |   51.78 +-   5.64
+PXDTrackingEventLevelMdstInfoFiller |         20 |          0 |       0.02 |    0.97 +-   0.07
+PXDSpacePointCreator                |         20 |          0 |       0.04 |    1.94 +-   0.25
+TFCDC_WireHitPreparer               |         20 |          3 |       2.66 |  132.99 +-  21.76
+TFCDC_ClusterPreparer               |         20 |          0 |      19.41 |  970.71 +- 391.08
+TFCDC_SegmentFinderFacetAutomaton   |         20 |         50 |     435.72 | 21785.86 +-9767.75
+TFCDC_AxialTrackFinderLegendre      |         20 |         27 |     163.21 | 8160.49 +-5010.18
+TFCDC_TrackQualityAsserter          |         20 |          0 |       1.37 |   68.75 +-  22.17
+TFCDC_StereoHitFinder               |         20 |          6 |      32.72 | 1636.15 +- 769.67
+TFCDC_SegmentTrackCombiner          |         20 |          9 |      25.32 | 1266.04 +- 513.17
+TFCDC_TrackQualityAsserter          |         20 |          0 |       1.78 |   89.03 +-  22.84
+TFCDC_TrackQualityEstimator         |         20 |          1 |       0.34 |   16.86 +-   5.34
+TFCDC_TrackExporter                 |         20 |          0 |       1.73 |   86.42 +-  23.68
+IPTrackTimeEstimator                |         20 |          0 |       0.04 |    2.17 +-   1.09
+CDCHitBasedT0Extraction             |         20 |          6 |       2.32 |  116.02 +- 117.89
+CDCTrackingEventLevelMdstInfoFiller |         20 |          0 |       0.06 |    2.98 +-   0.72
+CDCToSVDSpacePointCKF_backward      |         20 |         19 |      56.77 | 2838.63 +-2230.06
+CDCToSVDSpacePointCKF_forward       |         20 |          0 |       2.73 |  136.38 +- 328.11
+SectorMapBootstrap                  |         20 |          0 |       0.00 |    0.07 +-   0.01
+SegmentNetworkProducer              |         20 |          2 |       1.88 |   93.95 +-  21.31
+TrackFinderVXDCellOMat              |         20 |          1 |       0.96 |   47.88 +-   6.59
+AddVXDTrackCandidateSubSets         |         20 |          6 |       0.08 |    3.91 +-   0.79
+QualityEstimatorVXD                 |         20 |          0 |       0.06 |    3.03 +-   2.71
+BestVXDTrackCandidatesSelector      |         20 |          0 |       0.00 |    0.20 +-   0.02
+SPTCvirtualIPRemover                |         20 |          0 |       0.01 |    0.57 +-   0.07
+SVDOverlapResolver                  |         20 |          0 |       0.63 |   31.57 +-  15.54
+SPTCmomentumSeedRetriever           |         20 |          6 |       7.16 |  357.84 +-  27.50
+SPTC2RTConverter                    |         20 |          0 |       0.15 |    7.42 +-   2.81
+DAFRecoFitter                       |         20 |          0 |       1.34 |   66.93 +- 168.86
+CDCToSVDSeedCKF_backward            |         20 |          0 |       1.89 |   94.30 +- 173.99
+DAFRecoFitter                       |         20 |          0 |       1.23 |   61.57 +- 162.66
+CDCToSVDSeedCKF_forward             |         20 |          0 |       1.76 |   87.78 +- 173.03
+RelatedTracksCombiner               |         20 |          0 |       4.96 |  247.80 +- 204.82
+ToCDCCKF                            |         20 |          1 |      57.41 | 2870.33 +-1716.35
+CDCCKFTracksCombiner                |         20 |          0 |       1.79 |   89.47 +-  33.31
+PruneRecoTracks                     |         20 |          0 |       0.24 |   11.82 +-   1.51
+PruneRecoTracks                     |         20 |          0 |       0.01 |    0.40 +-   0.18
+DAFRecoFitter                       |         20 |          0 |      46.06 | 2302.84 +-1063.05
+ToPXDCKF_backward                   |         20 |          9 |       4.30 |  215.13 +-  52.78
+DAFRecoFitter                       |         20 |          0 |       0.27 |   13.59 +-  47.82
+ToPXDCKF_forward                    |         20 |          0 |       0.35 |   17.25 +-  47.35
+RelatedTracksCombiner               |         20 |          0 |       1.98 |   99.01 +-  54.71
+PruneRecoTracks                     |         20 |          0 |       0.13 |    6.62 +-   3.45
+PruneRecoTracks                     |         20 |          0 |       0.03 |    1.29 +-   0.64
+PruneRecoTracks                     |         20 |          0 |       0.17 |    8.41 +-   3.56
+PruneRecoTracks                     |         20 |          0 |       0.01 |    0.33 +-   0.13
+SVDEventT0Estimator                 |         20 |          0 |       0.21 |   10.71 +-   3.43
+FullGridChi2TrackTimeExtractor      |         20 |          0 |       0.15 |    7.30 +-   1.40
+IPTrackTimeEstimator                |         20 |          0 |       0.00 |    0.20 +-   0.06
+Combined_DAFRecoFitter              |         20 |          0 |      42.01 | 2100.42 +- 883.74
+TrackCreator                        |         20 |          1 |      83.53 | 4176.72 +-1676.66
+FlipQuality_1stMVA                  |         20 |          0 |       0.45 |   22.65 +-   5.15
+RecoTracksReverter                  |         20 |          2 |       0.59 |   29.55 +-  23.50
+Combined_DAFRecoFitter_flipped      |         20 |          2 |      17.44 |  872.05 +- 776.17
+IPTrackTimeEstimator                |         20 |          0 |       0.03 |    1.61 +-   1.31
+TrackCreator_flipped                |         20 |          2 |      45.23 | 2261.48 +-2039.59
+FlipQuality_2ndMVA                  |         20 |          0 |       0.15 |    7.37 +-   3.67
+FlippedRecoTracksMerger             |         20 |          0 |       0.24 |   12.17 +-  31.06
+V0Finder                            |         20 |        502 |     340.45 | 17022.41 +-19260.54
+KinkFinder                          |         20 |         22 |      64.10 | 3204.91 +-3577.56
+TrackTimeEstimator                  |         20 |          1 |       0.13 |    6.34 +-   1.81
+TrackFinderMCTruthRecoTracks        |         20 |          4 |       6.38 |  319.22 +-  70.59
+MCRecoTracksMatcher                 |         20 |         15 |       5.21 |  260.62 +-  61.33
+TrackToMCParticleRelator            |         20 |          0 |       0.03 |    1.69 +-   0.32
+PruneRecoHits                       |         20 |          4 |      17.25 |  862.75 +- 283.17
+Progress                            |         20 |          1 |       0.23 |   11.59 +-   9.79
+===============================================================================================
+Total                               |         21 |        769 |    1522.49 | 72499.42 +-33574.75
+===============================================================================================
+
+==1099188== 
+==1099188== Events    : Ir
+==1099188== Collected : 26153162639
+==1099188== 
+==1099188== I   refs:      26,153,162,639
