@@ -2,19 +2,20 @@ digraph {
 	graph [fontname=Arial];
 	node [fontcolor=white,
 		fontname=Arial,
+		label="\N",
 		shape=box,
 		style=filled
 	];
 	edge [fontname=Arial];
 	"Belle2::RecoTrack::addHitsFromRecoTrack(Belle2::RecoTrack const*, unsigned int, bool, std::optional<double>)"	[color="#0d1676",
 		fontcolor="#ffffff",
-		label="Belle2::\lRecoTrack::\laddHitsFromRecoTrack\l2.18% (0.00%)\l"];
+		label="Belle2::RecoTrack::addHitsFromRecoTrack\l2.18% (0.00%)\l"];
 	"Belle2::TrackFitter::fit(Belle2::RecoTrack&, Belle2::Const::ChargedStable const&, bool) const"	[color="#0ba74d",
 		fontcolor="#ffffff",
-		label="Belle2::\lTrackFitter::\lfit\l39.33% (0.00%)\l"];
+		label="Belle2::TrackFitter::fit\l39.33% (0.00%)\l"];
 	"Belle2::V0Fitter::copyRecoTrack(Belle2::RecoTrack*)"	[color="#0d1676",
 		fontcolor="#ffffff",
-		label="Belle2::\lV0Fitter::\lcopyRecoTrack\l2.19% (0.00%)\l"];
+		label="Belle2::V0Fitter::copyRecoTrack\l2.19% (0.00%)\l"];
 	"Belle2::V0Fitter::copyRecoTrack(Belle2::RecoTrack*)" -> "Belle2::RecoTrack::addHitsFromRecoTrack(Belle2::RecoTrack const*, unsigned int, bool, std::optional<double>)"	[arrowsize=0.35,
 		color="#0d1676",
 		fontcolor="#0d1676",
@@ -22,7 +23,7 @@ digraph {
 		penwidth=0.50];
 	"Belle2::V0Fitter::copyRecoTrackAndFit(Belle2::RecoTrack*, int)"	[color="#0c658a",
 		fontcolor="#ffffff",
-		label="Belle2::\lV0Fitter::\lcopyRecoTrackAndFit\l17.75% (0.00%)\l"];
+		label="Belle2::V0Fitter::copyRecoTrackAndFit\l17.75% (0.00%)\l"];
 	"Belle2::V0Fitter::copyRecoTrackAndFit(Belle2::RecoTrack*, int)" -> "Belle2::TrackFitter::fit(Belle2::RecoTrack&, Belle2::Const::ChargedStable const&, bool) const"	[arrowsize=0.41,
 		color="#0c6189",
 		fontcolor="#0c6189",
@@ -36,10 +37,10 @@ digraph {
 	"Belle2::V0Fitter::extrapolateToVertex(genfit::MeasuredStateOnPlane&, genfit::MeasuredStateOnPlane&, ROOT::Math::DisplacementVector3D<\
 ROOT::Math::Cartesian3D<double>, ROOT::Math::DefaultCoordinateSystemTag> const&, unsigned int&)"	[color="#0d2c7c",
 		fontcolor="#ffffff",
-		label="Belle2::\lV0Fitter::\lextrapolateToVertex\l7.02% (0.00%)\l"];
+		label="Belle2::V0Fitter::extrapolateToVertex\l7.02% (0.00%)\l"];
 	"genfit::StateOnPlane::extrapolateToPoint(TVector3 const&, bool, bool)"	[color="#0c6e8c",
 		fontcolor="#ffffff",
-		label="genfit::\lStateOnPlane::\lextrapolateToPoint\l19.19% (0.00%)\l"];
+		label="genfit::StateOnPlane::extrapolateToPoint\l19.19% (0.00%)\l"];
 	"Belle2::V0Fitter::extrapolateToVertex(genfit::MeasuredStateOnPlane&, genfit::MeasuredStateOnPlane&, ROOT::Math::DisplacementVector3D<\
 ROOT::Math::Cartesian3D<double>, ROOT::Math::DefaultCoordinateSystemTag> const&, unsigned int&)" -> "genfit::StateOnPlane::extrapolateToPoint(TVector3 const&, bool, bool)"	[arrowsize=0.35,
 		color="#0d2c7c",
@@ -48,7 +49,7 @@ ROOT::Math::Cartesian3D<double>, ROOT::Math::DefaultCoordinateSystemTag> const&,
 		penwidth=0.50];
 	"Belle2::V0Fitter::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&, bool&, bool&)"	[color="#ff0100",
 		fontcolor="#ffffff",
-		label="Belle2::\lV0Fitter::\lfitAndStore\l99.91% (0.00%)\l"];
+		label="Belle2::V0Fitter::fitAndStore\l99.91% (0.00%)\l"];
 	"Belle2::V0Fitter::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&, bool&, bool&)" -> "Belle2::V0Fitter::copyRecoTrack(Belle2::RecoTrack*)"	[arrowsize=0.35,
 		color="#0d1275",
 		fontcolor="#0d1275",
@@ -62,7 +63,7 @@ ROOT::Math::Cartesian3D<double>, ROOT::Math::DefaultCoordinateSystemTag> const&,
 	"Belle2::V0Fitter::removeInnerHits(Belle2::RecoTrack*, Belle2::RecoTrack*, int, ROOT::Math::DisplacementVector3D<ROOT::Math::Cartesian3D<\
 double>, ROOT::Math::DefaultCoordinateSystemTag> const&)"	[color="#0ba067",
 		fontcolor="#ffffff",
-		label="Belle2::\lV0Fitter::\lremoveInnerHits\l34.67% (0.00%)\l"];
+		label="Belle2::V0Fitter::removeInnerHits\l34.67% (0.00%)\l"];
 	"Belle2::V0Fitter::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&, bool&, bool&)" -> "Belle2::V0Fitter::removeInnerHits(Belle2::RecoTrack*, Belle2::RecoTrack*, int, ROOT::Math::DisplacementVector3D<ROOT::Math::Cartesian3D<\
 double>, ROOT::Math::DefaultCoordinateSystemTag> const&)"	[arrowsize=0.59,
 		color="#0ba067",
@@ -73,7 +74,7 @@ double>, ROOT::Math::DefaultCoordinateSystemTag> const&)"	[arrowsize=0.59,
 Const::ParticleType const&, unsigned int&, ROOT::Math::DisplacementVector3D<ROOT::Math::Cartesian3D<double>, ROOT::Math::DefaultCoordinateSystemTag>&, \
 bool)"	[color="#0ab024",
 		fontcolor="#ffffff",
-		label="Belle2::\lV0Fitter::\lvertexFitWithRecoTracks\l46.10% (0.00%)\l"];
+		label="Belle2::V0Fitter::vertexFitWithRecoTracks\l46.10% (0.00%)\l"];
 	"Belle2::V0Fitter::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&, bool&, bool&)" -> "Belle2::V0Fitter::vertexFitWithRecoTracks(Belle2::Track const*, Belle2::Track const*, Belle2::RecoTrack*, Belle2::RecoTrack*, Belle2::\
 Const::ParticleType const&, unsigned int&, ROOT::Math::DisplacementVector3D<ROOT::Math::Cartesian3D<double>, ROOT::Math::DefaultCoordinateSystemTag>&, \
 bool)"	[arrowsize=0.68,
@@ -103,7 +104,7 @@ ROOT::Math::Cartesian3D<double>, ROOT::Math::DefaultCoordinateSystemTag> const&,
 		penwidth=0.50];
 	"Belle2::V0Fitter::fitGFRaveVertex(genfit::Track&, genfit::Track&, genfit::GFRaveVertex&)"	[color="#0c708c",
 		fontcolor="#ffffff",
-		label="Belle2::\lV0Fitter::\lfitGFRaveVertex\l19.43% (0.00%)\l"];
+		label="Belle2::V0Fitter::fitGFRaveVertex\l19.43% (0.00%)\l"];
 	"Belle2::V0Fitter::vertexFitWithRecoTracks(Belle2::Track const*, Belle2::Track const*, Belle2::RecoTrack*, Belle2::RecoTrack*, Belle2::\
 Const::ParticleType const&, unsigned int&, ROOT::Math::DisplacementVector3D<ROOT::Math::Cartesian3D<double>, ROOT::Math::DefaultCoordinateSystemTag>&, \
 bool)" -> "Belle2::V0Fitter::fitGFRaveVertex(genfit::Track&, genfit::Track&, genfit::GFRaveVertex&)"	[arrowsize=0.44,
@@ -113,7 +114,7 @@ bool)" -> "Belle2::V0Fitter::fitGFRaveVertex(genfit::Track&, genfit::Track&, gen
 		penwidth=0.78];
 	"genfit::Track::Track(genfit::Track const&)"	[color="#0c5e88",
 		fontcolor="#ffffff",
-		label="genfit::\lTrack::\lTrack\l16.50% (0.01%)\l"];
+		label="genfit::Track::Track\l16.50% (0.01%)\l"];
 	"Belle2::V0Fitter::vertexFitWithRecoTracks(Belle2::Track const*, Belle2::Track const*, Belle2::RecoTrack*, Belle2::RecoTrack*, Belle2::\
 Const::ParticleType const&, unsigned int&, ROOT::Math::DisplacementVector3D<ROOT::Math::Cartesian3D<double>, ROOT::Math::DefaultCoordinateSystemTag>&, \
 bool)" -> "genfit::Track::Track(genfit::Track const&)"	[arrowsize=0.41,
@@ -123,7 +124,7 @@ bool)" -> "genfit::Track::Track(genfit::Track const&)"	[arrowsize=0.41,
 		penwidth=0.66];
 	"genfit::Track::~Track()"	[color="#0d1977",
 		fontcolor="#ffffff",
-		label="genfit::\lTrack::\l~Track\l2.96% (0.00%)\l"];
+		label="genfit::Track::~Track\l2.96% (0.00%)\l"];
 	"Belle2::V0Fitter::vertexFitWithRecoTracks(Belle2::Track const*, Belle2::Track const*, Belle2::RecoTrack*, Belle2::RecoTrack*, Belle2::\
 Const::ParticleType const&, unsigned int&, ROOT::Math::DisplacementVector3D<ROOT::Math::Cartesian3D<double>, ROOT::Math::DefaultCoordinateSystemTag>&, \
 bool)" -> "genfit::Track::~Track()"	[arrowsize=0.35,

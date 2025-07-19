@@ -3,7 +3,7 @@ gprof2dot \
 --root "Belle2::V0Fitter::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&, bool&, bool&)" \
 --node-label total-time-percentage --node-label self-time-percentage \
 callgrind.out | \
-python $PROJ/profiling/dotfmt.py > \
+python ../../dotfmt.py > \
 pruned-graph.dot
 
 dot -Tsvg -o pruned-graph.svg pruned-graph.dot
