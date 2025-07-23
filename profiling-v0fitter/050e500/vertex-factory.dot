@@ -1,0 +1,66 @@
+digraph {
+	graph [fontname=Arial];
+	node [fontcolor=white,
+		fontname=Arial,
+		label="\N",
+		shape=box,
+		style=filled
+	];
+	edge [fontname=Arial];
+	"genfit::GFRaveVertexFactory::findVertices(std::vector<genfit::GFRaveVertex*, std::allocator<genfit::GFRaveVertex*> >*, std::vector<\
+genfit::Track*, std::allocator<genfit::Track*> > const&, bool)"	[color="#0c5686",
+		fontcolor="#ffffff",
+		label="genfit::GFRaveVertexFactory::findVertices\l15.05% (0.00%)\l"];
+	"rave::VertexFactory::create(std::vector<rave::Track, std::allocator<rave::Track> > const&, bool) const"	[color="#0c5486",
+		fontcolor="#ffffff",
+		label="rave::VertexFactory::create\l14.80% (0.00%)\l"];
+	"genfit::GFRaveVertexFactory::findVertices(std::vector<genfit::GFRaveVertex*, std::allocator<genfit::GFRaveVertex*> >*, std::vector<\
+genfit::Track*, std::allocator<genfit::Track*> > const&, bool)" -> "rave::VertexFactory::create(std::vector<rave::Track, std::allocator<rave::Track> > const&, bool) const"	[arrowsize=0.38,
+		color="#0c5486",
+		fontcolor="#0c5486",
+		label="14.80%\n1391×",
+		penwidth=0.59];
+	"rave::VertexFactory::fit(std::vector<rave::Track, std::allocator<rave::Track> > const&, std::vector<rave::Track, std::allocator<\
+rave::Track> > const&, rave::VertexReconstructor const&, rave::Point3D const&, bool, bool, bool) const"	[color="#0c5486",
+		fontcolor="#ffffff",
+		label="rave::VertexFactory::fit\l14.80% (0.00%)\l"];
+	"rave::VertexFactory::create(std::vector<rave::Track, std::allocator<rave::Track> > const&, bool) const" -> "rave::VertexFactory::fit(std::vector<rave::Track, std::allocator<rave::Track> > const&, std::vector<rave::Track, std::allocator<\
+rave::Track> > const&, rave::VertexReconstructor const&, rave::Point3D const&, bool, bool, bool) const"	[arrowsize=0.38,
+		color="#0c5486",
+		fontcolor="#0c5486",
+		label="14.80%\n1391×",
+		penwidth=0.59];
+	"rave::VertexFactory::wipe() const"	[color="#0d327d",
+		fontcolor="#ffffff",
+		label="rave::VertexFactory::wipe\l8.36% (0.00%)\l"];
+	"rave::VertexFactory::fit(std::vector<rave::Track, std::allocator<rave::Track> > const&, std::vector<rave::Track, std::allocator<\
+rave::Track> > const&, rave::VertexReconstructor const&, rave::Point3D const&, bool, bool, bool) const" -> "rave::VertexFactory::wipe() const"	[arrowsize=0.35,
+		color="#0d1f78",
+		fontcolor="#0d1f78",
+		label="4.17%\n1391×",
+		penwidth=0.50];
+	"genfit::GFRaveVertexFactory::~GFRaveVertexFactory()"	[color="#0d1f78",
+		fontcolor="#ffffff",
+		label="genfit::GFRaveVertexFactory::~GFRaveVertexFactory\l4.19% (0.00%)\l"];
+	"rave::VertexFactory::~VertexFactory()"	[color="#0d1f78",
+		fontcolor="#ffffff",
+		label="rave::VertexFactory::~VertexFactory\l4.19% (0.00%)\l"];
+	"genfit::GFRaveVertexFactory::~GFRaveVertexFactory()" -> "rave::VertexFactory::~VertexFactory()"	[arrowsize=0.35,
+		color="#0d1f78",
+		fontcolor="#0d1f78",
+		label="4.19%\n1391×",
+		penwidth=0.50];
+	"rave::VertexFactory::~VertexFactory()'2"	[color="#0d1f78",
+		fontcolor="#ffffff",
+		label="rave::VertexFactory::~VertexFactory'2\l4.19% (0.00%)\l"];
+	"rave::VertexFactory::~VertexFactory()" -> "rave::VertexFactory::~VertexFactory()'2"	[arrowsize=0.35,
+		color="#0d1f78",
+		fontcolor="#0d1f78",
+		label="4.19%\n1391×",
+		penwidth=0.50];
+	"rave::VertexFactory::~VertexFactory()'2" -> "rave::VertexFactory::wipe() const"	[arrowsize=0.35,
+		color="#0d1f78",
+		fontcolor="#0d1f78",
+		label="4.19%\n1391×",
+		penwidth=0.50];
+}
