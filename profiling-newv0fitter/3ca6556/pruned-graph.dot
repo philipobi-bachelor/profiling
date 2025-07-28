@@ -9,13 +9,13 @@ digraph {
 	edge [fontname=Arial];
 	"Belle2::NewV0Fitter::copyRecoTrack(Belle2::RecoTrack const*, genfit::MeasuredStateOnPlane const&)"	[color="#0d0f73",
 		fontcolor="#ffffff",
-		label="Belle2::NewV0Fitter::copyRecoTrack\l0.51% (0.00%)\l"];
+		label="NewV0Fitter::\lcopyRecoTrack\l0.51% (0.00%)\l"];
 	"Belle2::NewV0Fitter::extrapolateToVertex(genfit::MeasuredStateOnPlane&, genfit::MeasuredStateOnPlane&, genfit::GFRaveVertex const&)"	[color="#0d1976",
 		fontcolor="#ffffff",
-		label="Belle2::NewV0Fitter::extrapolateToVertex\l2.87% (0.00%)\l"];
+		label="NewV0Fitter::\lextrapolateToVertex\l2.87% (0.00%)\l"];
 	"genfit::StateOnPlane::extrapolateToPoint(TVector3 const&, bool, bool)"	[color="#0d4883",
 		fontcolor="#ffffff",
-		label="genfit::StateOnPlane::extrapolateToPoint\l12.54% (0.00%)\l"];
+		label="genfit::\lStateOnPlane::\lextrapolateToPoint\l12.54% (0.00%)\l"];
 	"Belle2::NewV0Fitter::extrapolateToVertex(genfit::MeasuredStateOnPlane&, genfit::MeasuredStateOnPlane&, genfit::GFRaveVertex const&)" -> "genfit::StateOnPlane::extrapolateToPoint(TVector3 const&, bool, bool)"	[arrowsize=0.35,
 		color="#0d1976",
 		fontcolor="#0d1976",
@@ -23,10 +23,10 @@ digraph {
 		penwidth=0.50];
 	"Belle2::NewV0Fitter::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&, bool&, bool&)"	[color="#ff0200",
 		fontcolor="#ffffff",
-		label="Belle2::NewV0Fitter::fitAndStore\l99.80% (0.00%)\l"];
+		label="NewV0Fitter::\lfitAndStore\l99.80% (0.00%)\l"];
 	"Belle2::NewV0Fitter::removeHitsAndRefit(Belle2::RecoTrack const*, Belle2::RecoTrack const*, Belle2::Const::ParticleType const&)"	[color="#0c708c",
 		fontcolor="#ffffff",
-		label="Belle2::NewV0Fitter::removeHitsAndRefit\l19.53% (0.00%)\l"];
+		label="NewV0Fitter::\lremoveHitsAndRefit\l19.53% (0.00%)\l"];
 	"Belle2::NewV0Fitter::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&, bool&, bool&)" -> "Belle2::NewV0Fitter::removeHitsAndRefit(Belle2::RecoTrack const*, Belle2::RecoTrack const*, Belle2::Const::ParticleType const&)"	[arrowsize=0.44,
 		color="#0c708c",
 		fontcolor="#0c708c",
@@ -34,7 +34,7 @@ digraph {
 		penwidth=0.78];
 	"Belle2::NewV0Fitter::vertexFit(Belle2::RecoTrack const*, Belle2::RecoTrack const*, int, int, Belle2::Const::ParticleType const&)"	[color="#e1b605",
 		fontcolor="#ffffff",
-		label="Belle2::NewV0Fitter::vertexFit\l79.89% (0.00%)\l"];
+		label="NewV0Fitter::\lvertexFit\l79.89% (0.00%)\l"];
 	"Belle2::NewV0Fitter::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&, bool&, bool&)" -> "Belle2::NewV0Fitter::vertexFit(Belle2::RecoTrack const*, Belle2::RecoTrack const*, int, int, Belle2::Const::ParticleType const&)"	[arrowsize=0.89,
 		color="#e1b605",
 		fontcolor="#e1b605",
@@ -52,7 +52,7 @@ digraph {
 		penwidth=0.50];
 	"Belle2::TrackFitter::fit(Belle2::RecoTrack&, Belle2::Const::ChargedStable const&, bool) const"	[color="#0d377f",
 		fontcolor="#ffffff",
-		label="Belle2::TrackFitter::fit\l9.27% (0.00%)\l"];
+		label="TrackFitter::fit\l9.27% (0.00%)\l"];
 	"Belle2::NewV0Fitter::removeHitsAndRefit(Belle2::RecoTrack const*, Belle2::RecoTrack const*, Belle2::Const::ParticleType const&)" -> "Belle2::TrackFitter::fit(Belle2::RecoTrack&, Belle2::Const::ChargedStable const&, bool) const"	[arrowsize=0.35,
 		color="#0d377f",
 		fontcolor="#0d377f",
@@ -65,7 +65,7 @@ digraph {
 		penwidth=0.50];
 	"Belle2::NewV0Fitter::fitGFRaveVertex(genfit::Track&, genfit::Track&, genfit::GFRaveVertex&)"	[color="#0ba557",
 		fontcolor="#ffffff",
-		label="Belle2::NewV0Fitter::fitGFRaveVertex\l37.66% (0.00%)\l"];
+		label="NewV0Fitter::\lfitGFRaveVertex\l37.66% (0.00%)\l"];
 	"Belle2::NewV0Fitter::vertexFit(Belle2::RecoTrack const*, Belle2::RecoTrack const*, int, int, Belle2::Const::ParticleType const&)" -> "Belle2::NewV0Fitter::fitGFRaveVertex(genfit::Track&, genfit::Track&, genfit::GFRaveVertex&)"	[arrowsize=0.61,
 		color="#0ba557",
 		fontcolor="#0ba557",
@@ -73,7 +73,7 @@ digraph {
 		penwidth=1.51];
 	"genfit::Track::Track(genfit::Track const&)"	[color="#0b9f6d",
 		fontcolor="#ffffff",
-		label="genfit::Track::Track\l33.35% (0.02%)\l"];
+		label="genfit::\lTrack::Track\l33.35% (0.02%)\l"];
 	"Belle2::NewV0Fitter::vertexFit(Belle2::RecoTrack const*, Belle2::RecoTrack const*, int, int, Belle2::Const::ParticleType const&)" -> "genfit::Track::Track(genfit::Track const&)"	[arrowsize=0.58,
 		color="#0b9f6d",
 		fontcolor="#0b9f6d",
@@ -81,7 +81,7 @@ digraph {
 		penwidth=1.33];
 	"genfit::Track::~Track()"	[color="#0d277a",
 		fontcolor="#ffffff",
-		label="genfit::Track::~Track\l5.97% (0.00%)\l"];
+		label="genfit::\lTrack::~Track\l5.97% (0.00%)\l"];
 	"Belle2::NewV0Fitter::vertexFit(Belle2::RecoTrack const*, Belle2::RecoTrack const*, int, int, Belle2::Const::ParticleType const&)" -> "genfit::Track::~Track()"	[arrowsize=0.35,
 		color="#0d277a",
 		fontcolor="#0d277a",

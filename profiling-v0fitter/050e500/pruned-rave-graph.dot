@@ -9,10 +9,10 @@ digraph {
 	edge [fontname=Arial];
 	"KalmanVertexTrackUpdator<5u>::trackRefit(VertexState const&, ReferenceCountingPointer<LinearizedTrackState<5u> >, float) const"	[color="#0d1676",
 		fontcolor="#ffffff",
-		label="KalmanVertexTrackUpdator::trackRefit\l2.18% (0.00%)\l"];
+		label="KalmanVertexTrackUpdator::\ltrackRefit\l2.18% (0.00%)\l"];
 	_ff2d67a47cfac475671aa1360327e2c7b55eaded	[color="#0d1375",
 		fontcolor="#ffffff",
-		label="ROOT::Math::SMatrix::SMatrix\l1.39% (0.00%)\l"];
+		label="ROOT::Math::\lSMatrix::SMatrix\l1.39% (0.00%)\l"];
 	"KalmanVertexTrackUpdator<5u>::trackRefit(VertexState const&, ReferenceCountingPointer<LinearizedTrackState<5u> >, float) const" -> _ff2d67a47cfac475671aa1360327e2c7b55eaded	[arrowsize=0.35,
 		color="#0d1375",
 		fontcolor="#0d1375",
@@ -20,7 +20,7 @@ digraph {
 		penwidth=0.50];
 	_69818e289b8cfcf319dbb04c9d3e626dc53f9fe4	[color="#0d1375",
 		fontcolor="#ffffff",
-		label="ROOT::Math::SMatrix& ROOT::Math::SMatrix::operator=\l1.39% (0.00%)\l"];
+		label="ROOT::Math::SMatrix& \lROOT::Math::SMatrix::operator=\l1.39% (0.00%)\l"];
 	_ff2d67a47cfac475671aa1360327e2c7b55eaded -> _69818e289b8cfcf319dbb04c9d3e626dc53f9fe4	[arrowsize=0.35,
 		color="#0d1375",
 		fontcolor="#0d1375",
@@ -28,7 +28,7 @@ digraph {
 		penwidth=0.50];
 	"KalmanVertexTrackUpdator<5u>::update(CachingVertex<5u> const&, ReferenceCountingPointer<VertexTrack<5u> >) const"	[color="#0d1776",
 		fontcolor="#ffffff",
-		label="KalmanVertexTrackUpdator::update\l2.54% (0.00%)\l"];
+		label="KalmanVertexTrackUpdator::\lupdate\l2.54% (0.00%)\l"];
 	"KalmanVertexTrackUpdator<5u>::update(CachingVertex<5u> const&, ReferenceCountingPointer<VertexTrack<5u> >) const" -> "KalmanVertexTrackUpdator<5u>::trackRefit(VertexState const&, ReferenceCountingPointer<LinearizedTrackState<5u> >, float) const"	[arrowsize=0.35,
 		color="#0d1676",
 		fontcolor="#0d1676",
@@ -36,7 +36,7 @@ digraph {
 		penwidth=0.50];
 	"KalmanVertexUpdator<5u>::positionUpdate(VertexState const&, ReferenceCountingPointer<LinearizedTrackState<5u> >, float, int) const"	[color="#0d2078",
 		fontcolor="#ffffff",
-		label="KalmanVertexUpdator::positionUpdate\l4.44% (0.00%)\l"];
+		label="KalmanVertexUpdator::\lpositionUpdate\l4.44% (0.00%)\l"];
 	"KalmanVertexTrackUpdator<5u>::update(CachingVertex<5u> const&, ReferenceCountingPointer<VertexTrack<5u> >) const" -> "KalmanVertexUpdator<5u>::positionUpdate(VertexState const&, ReferenceCountingPointer<LinearizedTrackState<5u> >, float, int) const"	[arrowsize=0.35,
 		color="#0d0e73",
 		fontcolor="#0d0e73",
@@ -44,7 +44,7 @@ digraph {
 		penwidth=0.50];
 	"PerigeeLinearizedTrackState::positionJacobian() const"	[color="#0d1676",
 		fontcolor="#ffffff",
-		label="PerigeeLinearizedTrackState::positionJacobian\l2.26% (0.00%)\l"];
+		label="PerigeeLinearizedTrackState::\lpositionJacobian\l2.26% (0.00%)\l"];
 	"KalmanVertexUpdator<5u>::positionUpdate(VertexState const&, ReferenceCountingPointer<LinearizedTrackState<5u> >, float, int) const" -> "PerigeeLinearizedTrackState::positionJacobian() const"	[arrowsize=0.35,
 		color="#0d1676",
 		fontcolor="#0d1676",
@@ -52,7 +52,7 @@ digraph {
 		penwidth=0.50];
 	"PerigeeLinearizedTrackState::computeJacobians() const"	[color="#0d1676",
 		fontcolor="#ffffff",
-		label="PerigeeLinearizedTrackState::computeJacobians\l2.26% (0.00%)\l"];
+		label="PerigeeLinearizedTrackState::\lcomputeJacobians\l2.26% (0.00%)\l"];
 	"PerigeeLinearizedTrackState::positionJacobian() const" -> "PerigeeLinearizedTrackState::computeJacobians() const"	[arrowsize=0.35,
 		color="#0d1676",
 		fontcolor="#0d1676",
@@ -60,10 +60,10 @@ digraph {
 		penwidth=0.50];
 	"KalmanVertexUpdator<5u>::add(CachingVertex<5u> const&, ReferenceCountingPointer<VertexTrack<5u> >) const"	[color="#0d257a",
 		fontcolor="#ffffff",
-		label="KalmanVertexUpdator::add\l5.57% (0.00%)\l"];
+		label="KalmanVertexUpdator::\ladd\l5.57% (0.00%)\l"];
 	"KalmanVertexUpdator<5u>::update(CachingVertex<5u> const&, ReferenceCountingPointer<VertexTrack<5u> >, float, int) const"	[color="#0d257a",
 		fontcolor="#ffffff",
-		label="KalmanVertexUpdator::update\l5.57% (0.00%)\l"];
+		label="KalmanVertexUpdator::\lupdate\l5.57% (0.00%)\l"];
 	"KalmanVertexUpdator<5u>::add(CachingVertex<5u> const&, ReferenceCountingPointer<VertexTrack<5u> >) const" -> "KalmanVertexUpdator<5u>::update(CachingVertex<5u> const&, ReferenceCountingPointer<VertexTrack<5u> >, float, int) const"	[arrowsize=0.35,
 		color="#0d257a",
 		fontcolor="#0d257a",
@@ -77,7 +77,7 @@ digraph {
 	"KalmanVertexUpdator<5u>::chi2Increment(VertexState const&, VertexState const&, ReferenceCountingPointer<LinearizedTrackState<5u> >, \
 float) const"	[color="#0d1274",
 		fontcolor="#ffffff",
-		label="KalmanVertexUpdator::chi2Increment\l1.36% (0.00%)\l"];
+		label="KalmanVertexUpdator::\lchi2Increment\l1.36% (0.00%)\l"];
 	"KalmanVertexUpdator<5u>::update(CachingVertex<5u> const&, ReferenceCountingPointer<VertexTrack<5u> >, float, int) const" -> "KalmanVertexUpdator<5u>::chi2Increment(VertexState const&, VertexState const&, ReferenceCountingPointer<LinearizedTrackState<5u> >, \
 float) const"	[arrowsize=0.35,
 		color="#0d1274",
@@ -87,7 +87,7 @@ float) const"	[arrowsize=0.35,
 	"SequentialVertexFitter<5u>::fit(std::vector<ReferenceCountingPointer<VertexTrack<5u> >, std::allocator<ReferenceCountingPointer<\
 VertexTrack<5u> > > > const&, VertexState, bool) const"	[color="#0d367e",
 		fontcolor="#ffffff",
-		label="SequentialVertexFitter::fit\l9.03% (0.00%)\l"];
+		label="SequentialVertexFitter::\lfit\l9.03% (0.00%)\l"];
 	"SequentialVertexFitter<5u>::fit(std::vector<ReferenceCountingPointer<VertexTrack<5u> >, std::allocator<ReferenceCountingPointer<\
 VertexTrack<5u> > > > const&, VertexState, bool) const" -> "KalmanVertexUpdator<5u>::add(CachingVertex<5u> const&, ReferenceCountingPointer<VertexTrack<5u> >) const"	[arrowsize=0.35,
 		color="#0d257a",
@@ -96,7 +96,7 @@ VertexTrack<5u> > > > const&, VertexState, bool) const" -> "KalmanVertexUpdator<
 		penwidth=0.50];
 	"SequentialVertexSmoother<5u>::smooth(CachingVertex<5u> const&) const"	[color="#0d1b77",
 		fontcolor="#ffffff",
-		label="SequentialVertexSmoother::smooth\l3.26% (0.00%)\l"];
+		label="SequentialVertexSmoother::\lsmooth\l3.26% (0.00%)\l"];
 	"SequentialVertexFitter<5u>::fit(std::vector<ReferenceCountingPointer<VertexTrack<5u> >, std::allocator<ReferenceCountingPointer<\
 VertexTrack<5u> > > > const&, VertexState, bool) const" -> "SequentialVertexSmoother<5u>::smooth(CachingVertex<5u> const&) const"	[arrowsize=0.35,
 		color="#0d1b77",

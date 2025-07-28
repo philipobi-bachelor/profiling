@@ -1,20 +1,66 @@
 digraph {
-	tooltip=" "
-	graph [fontname=Arial, nodesep=0.125, ranksep=0.25];
-	node [fontcolor=white, fontname=Arial, height=0, shape=box, style=filled, width=0];
+	graph [fontname=Arial];
+	node [fontcolor=white,
+		fontname=Arial,
+		label="\N",
+		shape=box,
+		style=filled
+	];
 	edge [fontname=Arial];
-	"Belle2::Track::getTrackFitResultWithClosestMass(Belle2::Const::ChargedStable const&) const" [color="#0d0d73", fontcolor="#ffffff", fontsize="10.00", label="libmdst_dataobjects.so\nBelle2::Track::getTrackFitResultWithClosestMass\n0.10%\n(0.00%)\n6511×"];
-	"Belle2::TrackFitResult::getMomentum() const" [color="#0d0d73", fontcolor="#ffffff", fontsize="10.00", label="libanalysis_dataobjects.so\nBelle2::TrackFitResult::getMomentum\n0.03%\n(0.00%)\n3262×"];
-	"Belle2::V0FinderModule::event()" [color="#ff0000", fontcolor="#ffffff", fontsize="10.00", label="libV0Finder.so\nBelle2::V0FinderModule::event\n100.00%\n(0.00%)\n20×"];
-	"Belle2::V0FinderModule::event()" -> "Belle2::V0FinderModule::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&)" [arrowsize="1.00", color="#ff0100", fontcolor="#ff0100", fontsize="10.00", label="99.91%\n1161×", labeldistance="4.00", penwidth="4.00"];
-	"Belle2::V0FinderModule::event()" -> "Belle2::V0FinderModule::isTrackPairSelected(Belle2::Track const*, Belle2::Track const*)" [arrowsize="0.35", color="#0d0d73", fontcolor="#0d0d73", fontsize="10.00", label="0.02%\n443×", labeldistance="0.50", penwidth="0.50"];
-	"Belle2::V0FinderModule::event()" -> "Belle2::V0FinderModule::preFilterTracks(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&)" [arrowsize="0.35", color="#0d0d73", fontcolor="#0d0d73", fontsize="10.00", label="0.06%\n1188×", labeldistance="0.50", penwidth="0.50"];
-	"Belle2::V0FinderModule::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&)" [color="#ff0100", fontcolor="#ffffff", fontsize="10.00", label="libV0Finder.so\nBelle2::V0FinderModule::fitAndStore\n99.91%\n(0.00%)\n1161×"];
-	"Belle2::V0FinderModule::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&)" -> "Belle2::V0Fitter::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&, bool&, bool&)" [arrowsize="1.00", color="#ff0100", fontcolor="#ff0100", fontsize="10.00", label="99.91%\n1161×", labeldistance="4.00", penwidth="4.00"];
-	"Belle2::V0FinderModule::isTrackPairSelected(Belle2::Track const*, Belle2::Track const*)" [color="#0d0d73", fontcolor="#ffffff", fontsize="10.00", label="libV0Finder.so\nBelle2::V0FinderModule::isTrackPairSelected\n0.02%\n(0.00%)\n443×"];
-	"Belle2::V0FinderModule::isTrackPairSelected(Belle2::Track const*, Belle2::Track const*)" -> "Belle2::Track::getTrackFitResultWithClosestMass(Belle2::Const::ChargedStable const&) const" [arrowsize="0.35", color="#0d0d73", fontcolor="#0d0d73", fontsize="10.00", label="0.01%\n886×", labeldistance="0.50", penwidth="0.50"];
-	"Belle2::V0FinderModule::preFilterTracks(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&)" [color="#0d0d73", fontcolor="#ffffff", fontsize="10.00", label="libV0Finder.so\nBelle2::V0FinderModule::preFilterTracks\n0.06%\n(0.00%)\n1188×"];
-	"Belle2::V0FinderModule::preFilterTracks(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&)" -> "Belle2::Track::getTrackFitResultWithClosestMass(Belle2::Const::ChargedStable const&) const" [arrowsize="0.35", color="#0d0d73", fontcolor="#0d0d73", fontsize="10.00", label="0.04%\n2376×", labeldistance="0.50", penwidth="0.50"];
-	"Belle2::V0FinderModule::preFilterTracks(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&)" -> "Belle2::TrackFitResult::getMomentum() const" [arrowsize="0.35", color="#0d0d73", fontcolor="#0d0d73", fontsize="10.00", label="0.02%\n2376×", labeldistance="0.50", penwidth="0.50"];
-	"Belle2::V0Fitter::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&, bool&, bool&)" [color="#ff0100", fontcolor="#ffffff", fontsize="10.00", label="libtracking.so\nBelle2::V0Fitter::fitAndStore\n99.91%\n(0.00%)\n1161×"];
+	"Belle2::Track::getTrackFitResultWithClosestMass(Belle2::Const::ChargedStable const&) const"	[color="#0d0d73",
+		fontcolor="#ffffff",
+		label="Track::\lgetTrackFitResultWithClosestMass\l0.10% (0.00%)\l"];
+	"Belle2::TrackFitResult::getMomentum() const"	[color="#0d0d73",
+		fontcolor="#ffffff",
+		label="TrackFitResult::\lgetMomentum\l0.03% (0.00%)\l"];
+	"Belle2::V0FinderModule::event()"	[color="#ff0000",
+		fontcolor="#ffffff",
+		label="V0FinderModule::\levent\l100.00% (0.00%)\l"];
+	"Belle2::V0FinderModule::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&)"	[color="#ff0100",
+		fontcolor="#ffffff",
+		label="V0FinderModule::\lfitAndStore\l99.91% (0.00%)\l"];
+	"Belle2::V0FinderModule::event()" -> "Belle2::V0FinderModule::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&)"	[arrowsize=1.00,
+		color="#ff0100",
+		fontcolor="#ff0100",
+		label="99.91%\n1161×",
+		penwidth=4.00];
+	"Belle2::V0FinderModule::isTrackPairSelected(Belle2::Track const*, Belle2::Track const*)"	[color="#0d0d73",
+		fontcolor="#ffffff",
+		label="V0FinderModule::\lisTrackPairSelected\l0.02% (0.00%)\l"];
+	"Belle2::V0FinderModule::event()" -> "Belle2::V0FinderModule::isTrackPairSelected(Belle2::Track const*, Belle2::Track const*)"	[arrowsize=0.35,
+		color="#0d0d73",
+		fontcolor="#0d0d73",
+		label="0.02%\n443×",
+		penwidth=0.50];
+	"Belle2::V0FinderModule::preFilterTracks(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&)"	[color="#0d0d73",
+		fontcolor="#ffffff",
+		label="V0FinderModule::\lpreFilterTracks\l0.06% (0.00%)\l"];
+	"Belle2::V0FinderModule::event()" -> "Belle2::V0FinderModule::preFilterTracks(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&)"	[arrowsize=0.35,
+		color="#0d0d73",
+		fontcolor="#0d0d73",
+		label="0.06%\n1188×",
+		penwidth=0.50];
+	"Belle2::V0Fitter::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&, bool&, bool&)"	[color="#ff0100",
+		fontcolor="#ffffff",
+		label="V0Fitter::\lfitAndStore\l99.91% (0.00%)\l"];
+	"Belle2::V0FinderModule::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&)" -> "Belle2::V0Fitter::fitAndStore(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&, bool&, bool&)"	[arrowsize=1.00,
+		color="#ff0100",
+		fontcolor="#ff0100",
+		label="99.91%\n1161×",
+		penwidth=4.00];
+	"Belle2::V0FinderModule::isTrackPairSelected(Belle2::Track const*, Belle2::Track const*)" -> "Belle2::Track::getTrackFitResultWithClosestMass(Belle2::Const::ChargedStable const&) const"	[arrowsize=0.35,
+		color="#0d0d73",
+		fontcolor="#0d0d73",
+		label="0.01%\n886×",
+		penwidth=0.50];
+	"Belle2::V0FinderModule::preFilterTracks(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&)" -> "Belle2::Track::getTrackFitResultWithClosestMass(Belle2::Const::ChargedStable const&) const"	[arrowsize=0.35,
+		color="#0d0d73",
+		fontcolor="#0d0d73",
+		label="0.04%\n2376×",
+		penwidth=0.50];
+	"Belle2::V0FinderModule::preFilterTracks(Belle2::Track const*, Belle2::Track const*, Belle2::Const::ParticleType const&)" -> "Belle2::TrackFitResult::getMomentum() const"	[arrowsize=0.35,
+		color="#0d0d73",
+		fontcolor="#0d0d73",
+		label="0.02%\n2376×",
+		penwidth=0.50];
 }
